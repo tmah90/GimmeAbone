@@ -1,0 +1,110 @@
+
+<html>
+<style>
+
+html{ 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment:scroll;
+        min-height: 100vh;
+}
+h1 {;
+    font-family: cursive;
+    font-size: 20;
+    position: center;
+    color: dodgerblue;
+    letter-spacing: 12px;
+    margin:30px 20px 50px 0px;
+}
+
+h2 {
+    font-size: 14;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: darkslateblue;
+    position: center;
+
+}
+
+h3 , h4{
+    margin: 20px 0px 10px 0px;
+    letter-spacing:3px;
+    color: darkslateblue;
+}
+#Teddy-container{
+   margin left:20px;
+   position: relative;
+   float: left;
+}
+
+.teddyPics{
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 3px solid powderblue; 
+    position: center;
+
+}
+
+.text {
+    color: darkslateblue;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    width: 220px;
+    opacity: 0;
+    transition: .3s ease-out;
+    background-color: rgb(132, 144, 148);
+  }
+
+  .Teddy-container:hover .overlay {
+    opacity: .80;
+  }
+  
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.score {
+    font-size: 20px;
+    font-weight: 300;
+    color: darkslateblue;
+    font: bold;
+}
+
+.btn {
+    color: darkslateblue;
+}

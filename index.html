@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <title> Pick a Teddy</title>
+        <!-- Required meta tags -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    </head>
+
+    <body>
+<div id="background">
+<!--add in background-->
+<div class="header text-center"></div>
+    <h1>Give Teddy a bone </h1>
+    <h2>The amount of bones Teddy wants: </h2> 
+    <h2 id ="tedNumber"></h2>       
+
+    <div class="row">
+            <div class="col-lg-12 directions">
+            <div id="instructions">
+                <p>You will be given a random number at the start of the game.
+                There are 4 different images of Teddy. Each image represents a different amount of bones Teddy will receive.
+                You win the game by matching your total bones to the amount Teddy wants, you lose the game if your total bones goes above the Teddy's number.
+                Each time when the game starts, the game will change the values of each puppy.</p>
+            </div>
+            <div id="data-for-game">
+                <div id="current-random-num">
+                </div>
+        
+        <div class="Teddy-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/images/MatureTeddy.jpg" alt="Teddy" class="teddyPics" id="matureTeddy"/>
+                    <div class="overlay teddyPics">
+                        <div class="text">Mature Teddy</div>
+                    </div>
+                </div> 
+                    <div class="col-md-3">
+                    <img src= "assets/images/bearTeddy.jpg" alt="Teddy" class="teddyPics" id="bearTeddy"/>
+                    <div class="overlay teddyPics">
+                            <div class="text">Bear Teddy</div>
+                        </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/taxiTeddy.jpg" alt="Teddy" class="teddyPics" id="taxiTeddy"/>
+                    <div class="overlay teddyPics">
+                            <div class="text">Taxi Teddy</div>
+                        </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/sillyTeddy.jpg" alt="Teddy" class="teddyPics" id="sillyTeddy"/>
+                    <div class="overlay teddyPics">
+                            <div class="text">Silly Teddy</div>
+                        </div>
+                </div>
+        </div>
+
+     <div class="row">
+            <div class="col-lg-4 scores">
+                    <p class="score">Games Won: <span id="wins"></span></p> 
+                    <p class="score">Games Lost: <span id="losses"></span></p>
+                </div>
+            <div class="col-lg-4 button">
+                    <h3 id="winOrLost"></h3>
+                   <button type="button" class="btn btn-light btn-lg">PLAY AGAIN</button>
+               </div>
+            <div class="col-lg-4 total">
+                <h4>TOTAL BONES:</h3>
+                 <h4 id="totalBones"></h3>
+        </div>
+    
+    </div>
+        </div>
+</body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
